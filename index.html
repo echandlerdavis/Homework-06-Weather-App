@@ -29,19 +29,40 @@
         <span class="msg"></span>
         </form>
       </card>
-      <card class="search-history">
+      <card id="search-buttons">
         <h2>Search History</h2>
       </card>
     </div>
     <div class="weather">
-      <card class = "large-card">largest card</card>
-      <card class="small-card">one of 5 </card>
-      <card class="small-card">2 of 5 </card>
-      <card class="small-card">3 of 5 </card>
-      <card class="small-card">4 of 5 </card>
-      <card class="small-card">5 of 5 </card>
+      <div class="currentDayWeather">
+      <card id = "current-day">
+        <h2>City Name</h2>
+        <ul>
+          <li><img src="https://openweathermap.org/img/wn/${current.weather[0].icon}.2x.png"></li>
+          <li>Temperature</li>
+          <li>Humidity</li>
+          <li>Wind Speed</li>
+          <li>UV Index</li>
+        </ul>
+      </card>
+      </div>
+      <div class="fiveDayWeather">
+      <card class="small-card" id="five-day">
+        <h2>City Name</h2>
+        <ul>
+          <li><img src="https://openweathermap.org/img/wn/${daily.daily[i].weather[0].icon}.2x.png"></li>
+          <li>Temperature</li>
+          <li>Humidity</li>
+          <li>Wind Speed</li>
+          <li>UV Index</li>
+        </ul>
+      </card>
+      <card class="small-card" id="day-2"></card>
+      <card class="small-card" id="day-3"></card>
+      <card class="small-card" id="day-4"></card>
+      <card class="small-card" id="day-5"></card>
+        </div>
     </div>
-   </div>
    
   </div>
 

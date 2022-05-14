@@ -43,7 +43,7 @@ h2 {
     border-width: 0.01em;
 }
 
-.search-history {
+#search-buttons {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -76,7 +76,7 @@ button {
     width:66.66%;
 }
 
-.large-card {
+#current-day {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
